@@ -13,7 +13,7 @@ export default function TodoListComponent({ controller }: todoListProps) {
 	
 	return (
 		<>
-			{data && data?.todoList.length ? (
+			{data && data?.todoList?.length ? (
 				<TodoItems items={data.todoList}/>
 			) : (
 				<div>No Data</div>
